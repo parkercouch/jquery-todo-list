@@ -4,8 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Front-End</title>
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="container">
+    <h1 class="title">Todo List</h1>
+
+    <div id="form-container">
+      <form id="input-form" class="fill" action="get">
+        <input class="line" type="text" name="itemName" id="itemName">
+        <input class="add button" type="submit" value="+">
+      </form>
+    </div>
+
+    <div id="list-container">
+      <ul id="list" class="sortable"></ul>
+    </div>
+
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
